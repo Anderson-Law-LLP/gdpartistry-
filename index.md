@@ -10,7 +10,7 @@ WELCOME TO GDPARGH!
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> {% if post.subtitle %}{{ post.subtitle }}{% endif %}
+      <a href="{{ post.url | relative_url}}">{{ post.title }}</a> {% if post.subtitle %}{{ post.subtitle }}{% endif %}
     </li>
   {% endfor %}
 </ul>
